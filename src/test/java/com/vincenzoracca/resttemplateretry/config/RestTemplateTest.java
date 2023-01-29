@@ -63,7 +63,7 @@ class RestTemplateTest {
     }
 
     @Test
-    void testRetryWithWithFailureNotManaged() throws IOException {
+    void testRetryWithFailureNotManaged() throws IOException {
         RestTemplate restTemplate = new AppConfig().restTemplate(3);
 
         try(MockWebServer mockWebServer = new MockWebServer()) {
