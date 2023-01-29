@@ -7,6 +7,9 @@ In addition, the retry configuration is centralized so the clients can use the R
 transparently.
 
 ## How
-I used the Decorator design pattern to enrich the normal behavior of the RestTemplate with RetryTemplate:
+I extended the RestTemplate class to enrich his normal behavior, with RetryTemplate:
 
 `public class RestTemplateRetryable extends RestTemplate`
+
+## Article on my blog
+Read the article on my blog for more: https://www.vincenzoracca.com/en/blog/framework/spring/resttemplate-retry/
