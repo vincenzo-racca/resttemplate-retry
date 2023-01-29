@@ -15,9 +15,11 @@ import java.util.Set;
 
 public class CustomRetryTemplateBuilder {
 
+    private static final int DEFAULT_MAX_ATTEMPS = 3;
+
     private final Set<HttpStatusCode> httpStatusRetry;
 
-    private int retryMaxAttempts;
+    private int retryMaxAttempts = DEFAULT_MAX_ATTEMPS;
 
     public CustomRetryTemplateBuilder() {
         this.httpStatusRetry = new HashSet<>();
